@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0BE11419F9008C00EA219F /* SSDisplayTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BE11319F9008C00EA219F /* SSDisplayTaskViewController.m */; };
+		CA0BE11719F900EA00EA219F /* SSEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BE11619F900EA00EA219F /* SSEditTaskViewController.m */; };
+		CA0BE11A19F90B9C00EA219F /* SSTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0BE11919F90B9C00EA219F /* SSTaskModel.m */; };
 		CA12226F19F8F83C00AD344C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12226E19F8F83C00AD344C /* Foundation.framework */; };
 		CA12227119F8F83C00AD344C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12227019F8F83C00AD344C /* CoreGraphics.framework */; };
 		CA12227319F8F83C00AD344C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12227219F8F83C00AD344C /* UIKit.framework */; };
@@ -14,13 +17,14 @@
 		CA12227B19F8F83C00AD344C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA12227A19F8F83C00AD344C /* main.m */; };
 		CA12227F19F8F83C00AD344C /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA12227E19F8F83C00AD344C /* SSAppDelegate.m */; };
 		CA12228219F8F83C00AD344C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA12228019F8F83C00AD344C /* Main.storyboard */; };
-		CA12228519F8F83C00AD344C /* SSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA12228419F8F83C00AD344C /* SSViewController.m */; };
 		CA12228719F8F83C00AD344C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA12228619F8F83C00AD344C /* Images.xcassets */; };
 		CA12228E19F8F83C00AD344C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12228D19F8F83C00AD344C /* XCTest.framework */; };
 		CA12228F19F8F83C00AD344C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12226E19F8F83C00AD344C /* Foundation.framework */; };
 		CA12229019F8F83C00AD344C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA12227219F8F83C00AD344C /* UIKit.framework */; };
 		CA12229819F8F83C00AD344C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA12229619F8F83C00AD344C /* InfoPlist.strings */; };
 		CA12229A19F8F83C00AD344C /* Overdue_Task_List_AssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA12229919F8F83C00AD344C /* Overdue_Task_List_AssignmentTests.m */; };
+		CA1222A519F8FF0A00AD344C /* SSTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1222A419F8FF0A00AD344C /* SSTaskListViewController.m */; };
+		CA1222AB19F8FFCD00AD344C /* SSAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1222AA19F8FFCD00AD344C /* SSAddTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0BE11219F9008C00EA219F /* SSDisplayTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDisplayTaskViewController.h; sourceTree = "<group>"; };
+		CA0BE11319F9008C00EA219F /* SSDisplayTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDisplayTaskViewController.m; sourceTree = "<group>"; };
+		CA0BE11519F900EA00EA219F /* SSEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEditTaskViewController.h; sourceTree = "<group>"; };
+		CA0BE11619F900EA00EA219F /* SSEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSEditTaskViewController.m; sourceTree = "<group>"; };
+		CA0BE11819F90B9C00EA219F /* SSTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTaskModel.h; sourceTree = "<group>"; };
+		CA0BE11919F90B9C00EA219F /* SSTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTaskModel.m; sourceTree = "<group>"; };
 		CA12226B19F8F83C00AD344C /* Overdue Task List Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overdue Task List Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA12226E19F8F83C00AD344C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA12227019F8F83C00AD344C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +55,16 @@
 		CA12227D19F8F83C00AD344C /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
 		CA12227E19F8F83C00AD344C /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
 		CA12228119F8F83C00AD344C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA12228319F8F83C00AD344C /* SSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSViewController.h; sourceTree = "<group>"; };
-		CA12228419F8F83C00AD344C /* SSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSViewController.m; sourceTree = "<group>"; };
 		CA12228619F8F83C00AD344C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA12228C19F8F83C00AD344C /* Overdue Task List AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overdue Task List AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA12228D19F8F83C00AD344C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA12229519F8F83C00AD344C /* Overdue Task List AssignmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue Task List AssignmentTests-Info.plist"; sourceTree = "<group>"; };
 		CA12229719F8F83C00AD344C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA12229919F8F83C00AD344C /* Overdue_Task_List_AssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_List_AssignmentTests.m; sourceTree = "<group>"; };
+		CA1222A319F8FF0A00AD344C /* SSTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTaskListViewController.h; sourceTree = "<group>"; };
+		CA1222A419F8FF0A00AD344C /* SSTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTaskListViewController.m; sourceTree = "<group>"; };
+		CA1222A919F8FFCD00AD344C /* SSAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAddTaskViewController.h; sourceTree = "<group>"; };
+		CA1222AA19F8FFCD00AD344C /* SSAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAddTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0BE11B19F90BA300EA219F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA0BE11819F90B9C00EA219F /* SSTaskModel.h */,
+				CA0BE11919F90B9C00EA219F /* SSTaskModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		CA12226219F8F83C00AD344C = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +136,15 @@
 				CA12227D19F8F83C00AD344C /* SSAppDelegate.h */,
 				CA12227E19F8F83C00AD344C /* SSAppDelegate.m */,
 				CA12228019F8F83C00AD344C /* Main.storyboard */,
-				CA12228319F8F83C00AD344C /* SSViewController.h */,
-				CA12228419F8F83C00AD344C /* SSViewController.m */,
+				CA1222A319F8FF0A00AD344C /* SSTaskListViewController.h */,
+				CA1222A419F8FF0A00AD344C /* SSTaskListViewController.m */,
+				CA1222A919F8FFCD00AD344C /* SSAddTaskViewController.h */,
+				CA1222AA19F8FFCD00AD344C /* SSAddTaskViewController.m */,
+				CA0BE11219F9008C00EA219F /* SSDisplayTaskViewController.h */,
+				CA0BE11319F9008C00EA219F /* SSDisplayTaskViewController.m */,
+				CA0BE11519F900EA00EA219F /* SSEditTaskViewController.h */,
+				CA0BE11619F900EA00EA219F /* SSEditTaskViewController.m */,
+				CA0BE11B19F90BA300EA219F /* Models */,
 				CA12228619F8F83C00AD344C /* Images.xcassets */,
 				CA12227519F8F83C00AD344C /* Supporting Files */,
 			);
@@ -250,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA12228519F8F83C00AD344C /* SSViewController.m in Sources */,
+				CA0BE11A19F90B9C00EA219F /* SSTaskModel.m in Sources */,
+				CA1222A519F8FF0A00AD344C /* SSTaskListViewController.m in Sources */,
+				CA1222AB19F8FFCD00AD344C /* SSAddTaskViewController.m in Sources */,
 				CA12227F19F8F83C00AD344C /* SSAppDelegate.m in Sources */,
+				CA0BE11719F900EA00EA219F /* SSEditTaskViewController.m in Sources */,
+				CA0BE11419F9008C00EA219F /* SSDisplayTaskViewController.m in Sources */,
 				CA12227B19F8F83C00AD344C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +489,7 @@
 				CA12229F19F8F83C00AD344C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA1222A019F8F83C00AD344C /* Build configuration list for PBXNativeTarget "Overdue Task List AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +498,7 @@
 				CA1222A219F8F83C00AD344C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

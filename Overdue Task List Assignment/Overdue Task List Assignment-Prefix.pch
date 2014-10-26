@@ -10,6 +10,14 @@
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define TASK_LIST_KEY @"Task List Key"
+
+#define TASK_TITLE @"Task Title"
+#define TASK_DESCRIPTION @"Task Description"
+#define TASK_DUE_DATE @"Task Due Date"
+#define TASK_DONE @"Task Done"
+#define CHOSEN_TASK_ID @"ID of Task currently chosen for display or edit"
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
